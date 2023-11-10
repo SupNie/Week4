@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>repl.it</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <style>
+    body {
+      background: yellow;
+    }
+
+    .container {
+      display: flex;
+      width: 50%;
+      background-color: white;
+      flex-wrap: wrap;
+      /*wrap flex items to a new row if not enough space */
+
+    }
+
+    /* flex item of 20% per item */
+    .flex-item {
+      padding: 2%;
+      flex-grow: 1;
+      flex-basis: 15%;
+      /* 15% for borders*/
+
+      display: flex;
+      flex-direction: column;
+
+      border: 1px solid #D3D3D3;
+
+
+      /* let's set random images if we want to create cover images */
+      /*
+      background-image: url("https://picsum.photos/400/400");
+      background-size: cover;
+      */
+    }
+
+    .flex-img img {
+      max-width: 100%;
+    }
+
+    .flex-info {
+      margin-top: auto;
+    }
+
+    @media only screen and (min-device-width: 765px)
+    and (max-device-width: 800px)
+    and (-webkit-min-device-pixel-ratio: 3) {
+    .flex-item {
+        flex: 1 60%;
+        margin: 10%;
+      }
+
+    }
+
+    img {
+      width: 200px;
+    }
+  </style>
+</head>
+
+<body>
+  <section class="container">
+    <div class="flex-item">
+      <div class="flex-img">
+        <img src="https://tse3.mm.bing.net/th?id=OIP.Y8sOXIbAtE3C41ndB7p0KQHaHa&pid=Api&P=0&h=180">
+      </div>
+      <div class="flex-info">
+        <h4>Time</h4>
+        <p>Good photos</p>
+      </div>
+    </div>
+    <div class="flex-item">
+      <div class="flex-img">
+        <img src="https://cdn.wallpapersafari.com/5/73/QEsKof.jpg">
+      </div>
+      <div class="flex-info">
+        <h4>Interesting photos</h4>
+        <p>Good pictures</p>
+      </div>
+    </div>
+    <div class="flex-item">
+      <div class="flex-img">
+        <img
+          src="https://4.bp.blogspot.com/-AXF_SW2sfwU/UdlN3vX1caI/AAAAAAAAm2s/TTvhFdEaghc/s1600/Sunset+Photography+HD+Wallpapers+2.jpg">
+      </div>
+      <div class="flex-info">
+        <h4>Excellent photographs</h4>
+        <p>Excellent photos</p>
+      </div>
+    </div>
+    <div class="flex-item">
+      <div class="flex-img">
+        <img src="https://tse3.mm.bing.net/th?id=OIP.gTYLIaSb6qvbVUzBrWvq5QHaEc&pid=Api&P=0&h=180">
+      </div>
+      <div class="flex-info">
+        <h4>Different photos of</h4>
+        <p>Info of photos</p>
+      </div>
+    </div>
+    <div class="flex-item">
+      <div class="flex-img">
+        <img
+          src="https://www.hdwallpapers.in/download/ocean_and_rock_during_lovely_sunset_evening_under_cloudy_sky_hd_sunset-1280x720.jpg">
+      </div>
+      <div class="flex-info">
+        <h4>Pictures sightseeings</h4>
+        <p>Good pictures photos</p>
+      </div>
+    </div>
+  </section>
+
+
+</body>
+
+</html>
